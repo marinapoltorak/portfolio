@@ -1,0 +1,198 @@
+:root {
+  --primary: #628289;
+  --dark: #0D1A19;
+  --light: #9fede3;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Sulphur+Point", sans-serif;
+  background-image: url("silver_scales.png");
+  color: #0b0b14;
+}
+h1 {
+  font-family: "Sulphur+Point", serif;
+}
+
+.blockquote {
+  font-style: italic;
+  color: #18635d;
+}
+
+body {
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.btn {
+  background-image: url("polaroid.png");
+  color: #091c1a;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  box-shadow: var(--shadow);
+
+
+}
+.btn:hover {
+
+  background-image: url("wild_oliva.png");
+  color: #9fede3;
+}
+.btn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(6px);
+}
+
+
+.showcase img {
+  max-width: 600px;
+  padding: 10px;
+  height: 200px;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a:hover {
+  background-image: url("polaroid.png");
+  color: #091c1a;
+  border: solid black;
+}
+.main-nav a:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(6px);
+}
+
+
+/* top container */
+
+.top-container{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b'
+    'showcase showcase top-box-c'
+    'showcase showcase top-box-d';
+}
+
+/* showcase */
+
+.showcase {
+  background-image: url("polaroid.png");
+  grid-area: showcase;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.showcase img {
+  width: 200px;
+  height: auto;
+  display: block;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+@media only screen and (max-width: 800px) {
+  .showcase a {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+}
+.main-nav a {
+  background-image: url("wild_oliva.png");
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: #9fede3;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+footer {
+  background-image: url("keyboard.jpg");
+  margin: 5px;
+  position: fixed;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: solid black;
+}
+
+footer img {
+  max-height: 100px;
+  max-width: auto;
+  border: solid black;
+  margin: 5px 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    display: inline-grid;
+  }
+  footer img{
+    display: inline-flex;
+    flex-direction: row;
+    align-self: center;
+    max-width: 50px;
+    max-height:75px;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
