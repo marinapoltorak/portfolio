@@ -101,13 +101,14 @@ body {
 }
 
 .showcase img {
-  width: 200px;
+  width: 450px;
   height: auto;
   display: block;
   flex-direction: column;
   align-self: center;
   justify-content: center;
   box-shadow: var(--shadow);
+  grid-area: top-box-a;
 }
 @media only screen and (max-width: 800px) {
   .showcase a {
@@ -173,8 +174,26 @@ footer img {
     max-width: 30px;
     max-height:45px;
     margin: 2px 8px 2px 8px;
-
   }
+  .top-box-a{
+    width:300px;
+  }
+  #wis{
+    width: 200px;
+    height: 110px;
+  }
+}
+#wis{
+  background-image: url("wis.png");
+  width: 400px;
+  height: 220px;
+  border: solid black;
+}
+#api{
+  background-image: url("api.png");
+  width: 400px;
+  height: 220px;
+  border: solid black;
 }
 
 .tooltip {
@@ -201,11 +220,4 @@ footer img {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-}
-
-#wis{
-  background-image: url("wis.png");
-  width: 400px;
-  height: 220px;
-  border: solid black;
 }
