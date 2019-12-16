@@ -26,17 +26,14 @@ body {
 }
 
 .btn {
-  background-image: url("polaroid.png");
+  /* background-image: url("polaroid.png"); */
   color: #091c1a;
   padding: 0.6rem 1.3rem;
   text-decoration: none;
   border: 0;
   box-shadow: var(--shadow);
-
-
 }
 .btn:hover {
-
   background-image: url("wild_oliva.png");
   color: #9fede3;
 }
@@ -44,7 +41,6 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(6px);
 }
-
 
 .showcase img {
   max-width: 600px;
@@ -142,9 +138,8 @@ body {
 
 footer {
   background-image: url("keyboard.jpg");
-  margin: 5px;
   position: fixed;
-  padding: 0;
+  /* padding: 2px; */
   left: 0;
   bottom: 0;
   width: 100%;
@@ -153,21 +148,32 @@ footer {
 
 footer img {
   max-height: 100px;
-  max-width: auto;
+  max-width: 100px;
   border: solid black;
-  margin: 5px 15px;
+  margin: 5px 17px;
 }
 
 @media only screen and (max-width: 800px) {
   footer {
-    display: inline-grid;
+    /* display: inline-grid; */
+    background-image: url("keyboard.jpg");
+    margin: 0;
+    position: fixed;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 50px;
+    border: solid black;
   }
   footer img{
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     align-self: center;
-    max-width: 50px;
-    max-height:75px;
+    max-width: 30px;
+    max-height:45px;
+    margin: 2px 8px 2px 8px;
+
   }
 }
 
@@ -195,4 +201,8 @@ footer img {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+a#wis.btn {
+  background-color: black !important;
 }
