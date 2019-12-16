@@ -203,6 +203,9 @@ footer img {
   visibility: visible;
 }
 
-a#wis.btn {
-  background-color: black !important;
+#wis{
+  background-image: url("wis.png");
+  width: 400px;
+  height: 220px;
+  border: solid black;
 }
