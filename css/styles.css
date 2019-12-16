@@ -195,6 +195,12 @@ footer img {
   height: 220px;
   border: solid black;
 }
+#clock{
+  background-image: url("clock.png");
+  width: 400px;
+  height: 220px;
+  border: solid black;
+}
 
 .tooltip {
   position: relative;
