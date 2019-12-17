@@ -165,35 +165,6 @@ footer img {
   margin: 5px 17px;
 }
 
-/* @media only screen and (max-width: 800px) {
-  footer { */
-    /* display: inline-grid; */
-    /* background-image: url("keyboard.jpg");
-    margin: 0;
-    position: fixed;
-    padding: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    max-height: 50px;
-    border: solid black; */
-  /* }
-  footer img{ */
-    /* display: inline-flex;
-    flex-direction: column;
-    align-self: center;
-    max-width: 30px;
-    max-height:45px;
-    margin: 2px 8px 2px 8px; */
-  /* } */
-  /* .top-box-a{
-    width:300px;
-  }
-  #wis{
-    width: 200px;
-    height: 110px;
-  }
-} */
 #wis{
   background-image: url("wis.png");
   width: 400px;
