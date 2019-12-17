@@ -137,6 +137,14 @@ body {
   grid-area: top-box-b;
 }
 
+.top-box-c {
+  grid-area: top-box-c;
+}
+
+.top-box-d {
+  grid-area: top-box-d;
+}
+
 footer {
   background-image: url("keyboard.jpg");
   position: fixed;
