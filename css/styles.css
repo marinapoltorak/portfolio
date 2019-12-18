@@ -170,18 +170,34 @@ footer img {
   width: 400px;
   height: 220px;
   border: solid black;
+  box-shadow: var(--shadow);
+}
+#wis:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(6px);
 }
 #api{
   background-image: url("api.png");
   width: 400px;
   height: 220px;
   border: solid black;
+
+  box-shadow: var(--shadow);
+}
+#api:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(6px);
 }
 #fox{
   background-image: url("fox.png");
   width: 400px;
   height: 220px;
   border: solid black;
+  box-shadow: var(--shadow);
+}
+#fox:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(6px);
 }
 
 .tooltip {
@@ -191,11 +207,11 @@ footer img {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 100px;
-  background-color: grey;
-  color: #fff;
+  width: 300px;
+  background-color: #9fede3;
+  color: black;
   text-align: center;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   padding: 3px 0;
 
   /* Position the tooltip */
