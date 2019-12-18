@@ -26,7 +26,6 @@ body {
 }
 
 .btn {
-  /* background-image: url("polaroid.png"); */
   color: #091c1a;
   padding: 0.6rem 1.3rem;
   text-decoration: none;
@@ -86,8 +85,6 @@ body {
 
 /* showcase */
 
-
-
 .showcase {
   background-image: url("polaroid.png");
   grid-area: showcase;
@@ -113,10 +110,19 @@ body {
   grid-area: top-box-a;
 }
 @media only screen and (max-width: 800px) {
-  .showcase a {
+  .top-container {
     display: flex;
     flex-direction: column;
     margin: 1rem;
+  }
+  .showcase {
+    margin: 30px 30px;
+  }
+  .top-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 .main-nav a {
